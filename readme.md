@@ -1,4 +1,4 @@
-# **TIC-TAC TOE**
+# **TIC-TAC-TOE**
 ---
 # Idiomas/Languages: [Español](#es-un-juego-simple-de-tres-en-raya-hecho-con-html-css-y-javascript-que-lo-disfruten)/[English](#en-a-simple-tic-tac-toe-game-made-with-html-css-and-javascript-enjoy-it)
 ---
@@ -7,7 +7,7 @@
 ----
    > `index.html`:
         Este archivo es el mas importante, contiene el layout 
-        del tic-tac toe, y es el que conecta cada .css y .js 
+        del tic-tac-toe, y es el que conecta cada .css y .js 
         para formar el juego.
     `index.js:`
         Este es el encargado de controlar cada modulo, clase,
@@ -37,7 +37,7 @@
                 hace la gran cosa, pero, a la hora de decidir
                 quien gano y como, para trazar la linea tan 
                 iconica de este juego, es donde de verdad
-                brilla, podriamos pensar que el tic-tac toe,
+                brilla, podriamos pensar que el tic-tac-toe,
                 es simple, y que solo hay ocho formas de 
                 ganar, pero si lo piensas un poco, y si la
                 partida queda un ejemplo...
@@ -83,7 +83,7 @@
 ### PD: No usar las `Issues` como chat, si tienes un error, crea una`Issue` con la informacion del error y ya.
 #### Asistencia por Github copilot usada
 
-## EN: A simple tic-tac toe game made with html, css and javascript. Enjoy it \(: 
+## EN: A simple tic-tac-toe game made with html, css and javascript. Enjoy it \(: 
 
 
 
