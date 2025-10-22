@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/victorLines.css" />
+    <link rel="stylesheet" href="assets/styles/gameBoxes.css" />
+    <link rel="stylesheet" href="assets/styles/gameStats.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.26.1/dist/sweetalert2.all.min.js
+"></script>
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.26.1/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+    <!-- Título de la aplicación -->
+    <title>Tres en Raya</title>
+  </head>
+  <body>
+    <!-- Contenedor donde SweetAlert2 renderiza los modales personalizados -->
+    <div class="alertContainer"></div>
+    <header class="head">
+      <p>
+        <span class="player" style="color: red"><b>X</b></span
+        >Tres en Raya<span class="player" style="color: blue"><b>O</b></span>
+      </p>
+    </header>
+    <main class="main">
+      <!-- Indicador del turno actual -->
+      <h1>
+        Turno del jugador:
+        <span class="player" style="color: red" id="playerToPlayWrapper"
+          ><b id="playerToPlay">X</b></span
+        >
+      </h1>
+      <section class="wrapper">
+          <article class="game">
+          <div class="top left" id="1-1"></div>
+          <div class="top center" id="2-1"></div>
+          <div class="top right" id="3-1"></div>
+          <div class="half left" id="1-2"></div>
+          <div class="half center" id="2-2"></div>
+          <div class="half right" id="3-2"></div>
+          <div class="bott left" id="1-3"></div>
+          <div class="bott center" id="2-3"></div>
+          <div class="bott right" id="3-3"></div>
+
+          <!-- Líneas de victoria: elementos <i> que se usan para animar la línea ganadora -->
+
+          <i class="victorLine" id="th"></i>
+          <i class="victorLine" id="mh"></i>
+          <i class="victorLine" id="bh"></i>
+          <i class="victorLine" id="lv"></i>
+          <i class="victorLine" id="mv"></i>
+          <i class="victorLine" id="rv"></i>
+          <i class="victorLine" id="ld"></i>
+          <i class="victorLine" id="rd"></i>
+        </article>
+        <article class="stats">
+          <header class="headerStats">
+            <span style="color: red">X</span><span style="color: blue">O</span>
+          </header>
+          <section class="wins">
+            <div id="x_wins">0</div>
+            <div id="o_wins">0</div>
+          </section>
+        </article>
+      </section>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

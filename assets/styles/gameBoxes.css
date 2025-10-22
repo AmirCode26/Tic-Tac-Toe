@@ -1,0 +1,48 @@
+/*
+  gameBoxes.css
+  - Estilos que definen las "cajitas" (casillas) del tablero, sus bordes
+  - y comportamiento del grid que compone las 9 casillas del juego.
+*/
+
+.game {
+  width: 30vh;
+  height: 30vh;
+  position: relative;
+  min-width: 250px;
+  min-height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+  padding: 0.8em;
+}
+.game div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.game div.left {
+  border-right: solid 2px #fafafa;
+}
+.game div.center {
+  border-left: solid 2px #fafafa;
+  border-right: solid 2px #fafafa;
+}
+.game div.right {
+  border-left: solid 2px #fafafa;
+}
+.game div.left {
+  border-right: solid 2px #fafafa;
+}
+
+.game div.top {
+  border-bottom: solid 2px #fafafa;
+}
+.game div.half {
+  border-top: solid 2px #fafafa;
+  border-bottom: solid 2px #fafafa;
+}
+.game div.bott {
+  border-top: solid 2px #fafafa;
+}

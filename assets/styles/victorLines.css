@@ -1,0 +1,59 @@
+/*
+  victorLines.css
+  - Estilos y animaciones para las líneas que indican la victoria
+  - Contiene keyframes para la animación de aparición y posiciones
+    relativas para cada una de las 8 posibles líneas.
+*/
+
+@keyframes apperLine{
+  from{
+    height: 0%;
+  }
+  to{
+    height: 100%;
+  }
+}
+
+.victorLine{
+  width: 5px;
+  height: 0%;
+  background-color: #fafafa;
+  position: absolute;
+  border-radius: 3px;
+}
+.victorLine.apper{
+  animation: apperLine 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.victorLine#th {
+  top: 18.18%;
+  transform-origin: 0% 0%;
+  transform: rotate(-90deg);
+}
+.victorLine#mh {
+  top: 50%;
+  transform-origin: 0% 0%;
+  transform: rotate(-90deg);
+}
+.victorLine#bh {
+  top: 82.18%;
+  transform-origin: 0% 0%;
+  transform: rotate(-90deg);
+}
+.victorLine#lv {
+  left: 18.18%;
+}
+.victorLine#mv {
+  left: 50%;
+}
+.victorLine#rv {
+  left: 82.18%;
+}
+.victorLine#ld {
+  left: 50%;
+  transform: rotate(-45deg);
+}
+.victorLine#rd {
+  left: 50%;
+  transform: rotate(45deg);
+}

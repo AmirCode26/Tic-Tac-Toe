@@ -1,0 +1,37 @@
+/*
+  gameStats.css
+  - Estilos del contador de victorias y su presentación responsiva.
+*/
+
+.stats {
+  width: 20vh;
+  height: 15vh;
+  border: 3px solid #fafafa;
+  border-radius: 10px;
+  background-color: #202020;
+  overflow: hidden;
+}
+.headerStats {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.5em;
+  background-color: #fafafa;
+  padding-bottom: 9px;
+}
+.headerStats span {
+  background-color: #202020;
+}
+.wins {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.5em;
+  height: 80%;
+  background-color: #fafafa;
+}
+.wins div {
+  background-color: #202020;
+}
