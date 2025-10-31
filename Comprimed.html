@@ -4,7 +4,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style></style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: linear-gradient(to bottom, #101010, #303030, #101010);
+  background-repeat: repeat-y;
+  height: 100vh;
+  color: #fafafa;
+  overflow-y: hidden;
+}
+.head {
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head p {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  min-width: 350px;
+  width: 30vw;
+  font-size: 2em;
+  padding: 0.2em;
+  border-radius: 15px;
+}
+.main {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main h1 {
+  margin-bottom: 3rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.swalDesc {
+  font-size: 2em;
+}
+.swalPopup{
+  background-color: #303030;
+  color: aliceblue;
+}
+      .game {
+  width: 30vh;
+  height: 30vh;
+  position: relative;
+  min-width: 250px;
+  min-height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+  padding: 0.8em;
+}
+.game div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.game div.left {
+  border-right: solid 2px #fafafa;
+}
+.game div.center {
+  border-left: solid 2px #fafafa;
+  border-right: solid 2px #fafafa;
+}
+.game div.right {
+  border-left: solid 2px #fafafa;
+}
+.game div.left {
+  border-right: solid 2px #fafafa;
+}
+
+.game div.top {
+  border-bottom: solid 2px #fafafa;
+}
+.game div.half {
+  border-top: solid 2px #fafafa;
+  border-bottom: solid 2px #fafafa;
+}
+.game div.bott {
+  border-top: solid 2px #fafafa;
+}
+      .stats {
+  width: 20vh;
+  height: 15vh;
+  border: 3px solid #fafafa;
+  border-radius: 10px;
+  background-color: #202020;
+  overflow: hidden;
+}
+.headerStats {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.5em;
+  background-color: #fafafa;
+  padding-bottom: 9px;
+}
+.headerStats span {
+  background-color: #202020;
+}
+.wins {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.5em;
+  height: 80%;
+  background-color: #fafafa;
+}
+.wins div {
+  background-color: #202020;
+}
+
+      @keyframes apperLine{
+  from{
+    height: 0%;
+  }
+  to{
+    height: 100%;
+  }
+}
+
+.victorLine{
+  width: 5px;
+  height: 0%;
+  background-color: #fafafa;
+  position: absolute;
+  border-radius: 3px;
+}
+.victorLine.apper{
+  animation: apperLine 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.victorLine#th {
+  top: 18.18%;
+  transform-origin: 0% 0%;
+  transform: rotate(-90deg);
+}
+.victorLine#mh {
+  top: 50%;
+  transform-origin: 0% 0%;
+  transform: rotate(-90deg);
+}
+.victorLine#bh {
+  top: 82.18%;
+  transform-origin: 0% 0%;
+  transform: rotate(-90deg);
+}
+.victorLine#lv {
+  left: 18.18%;
+}
+.victorLine#mv {
+  left: 50%;
+}
+.victorLine#rv {
+  left: 82.18%;
+}
+.victorLine#ld {
+  left: 50%;
+  transform: rotate(-45deg);
+}
+.victorLine#rd {
+  left: 50%;
+  transform: rotate(45deg);
+}
+    </style>
     <script src="
     https://cdn.jsdelivr.net/npm/sweetalert2@11.26.1/dist/sweetalert2.all.min.js
 "></script>
